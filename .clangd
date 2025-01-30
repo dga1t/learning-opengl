@@ -1,0 +1,7 @@
+CompileFlags:
+  CompilationDatabase: build
+  Add:
+    - "--include-directory=/include"
+Diagnostics:
+  MissingIncludes: Strict
+  UnusedIncludes: Strict
