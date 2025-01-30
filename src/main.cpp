@@ -44,7 +44,22 @@ int main() {
     // omg - rendering greenish color
     glClearColor(0.2f, 0.3f, 0.3f, 1.0f);   // state-setting func
     glClear(GL_COLOR_BUFFER_BIT);           // state-using func
+    
+    // ----------------------------------
+    float vertices[] = {
+      -0.5f, -0.5f, 0.0f,
+      0.5f, -0.5f, 0.0f,
+      0.0f,  0.5f, 0.0f
+    };
+    
+    unsigned int VBO;
+    glGenBuffers(1, &VBO); 
+    glBindBuffer(GL_ARRAY_BUFFER, VBO);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
 
+    // stoppet at chapter 'Vertex shader'
+    // ----------------------------------
+    
     // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
     glfwSwapBuffers(window);
     glfwPollEvents();    
