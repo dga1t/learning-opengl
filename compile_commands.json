@@ -1,0 +1,28 @@
+[
+  {
+    "arguments": [
+      "/usr/lib64/ccache/g++",
+      "-c",
+      "-Iinclude",
+      "-o",
+      "opengl_app",
+      "src/main.cpp"
+    ],
+    "directory": "/home/dp/projects/graphics/learning-opengl",
+    "file": "/home/dp/projects/graphics/learning-opengl/src/main.cpp",
+    "output": "/home/dp/projects/graphics/learning-opengl/opengl_app"
+  },
+  {
+    "arguments": [
+      "/usr/lib64/ccache/g++",
+      "-c",
+      "-Iinclude",
+      "-o",
+      "opengl_app",
+      "src/glad.c"
+    ],
+    "directory": "/home/dp/projects/graphics/learning-opengl",
+    "file": "/home/dp/projects/graphics/learning-opengl/src/glad.c",
+    "output": "/home/dp/projects/graphics/learning-opengl/opengl_app"
+  }
+]
