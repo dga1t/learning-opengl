@@ -91,12 +91,7 @@ int main() {
   }
   glDeleteShader(vertexShader);
   glDeleteShader(fragmentShader);
-  
-  
-  // ----------------------------------------------
-  // stopped at chapter 'Linking Vertex Attributes'
-  
-  
+    
   // set up vertex data (and buffer(s)) and configure vertex attributes
   // ------------------------------------------------------------------
   float vertices[] = {
@@ -105,10 +100,24 @@ int main() {
     0.0f,  0.5f, 0.0f
   };
   
-  unsigned int VBO;
-  glGenBuffers(1, &VBO); 
+  unsigned int VBO, VAO;
+  glGenVertexArrays(1, &VAO);
+  glGenBuffers(1, &VBO);
+  
+  // 1. bind the Vertex Array Object first, then bind and set vertex buffer(s), and then configure vertex attributes(s).
+  glBindVertexArray(VAO);
+  
+  // 2. copy our vertices array in a buffer for OpenGL to use
   glBindBuffer(GL_ARRAY_BUFFER, VBO);
   glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+  // 3. then set the vertex attributes pointers
+  glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+  glEnableVertexAttribArray(0);
+  
+  
+  // ----------------------------------------------
+  // stopped at chapter 'The triangle we've all been waiting for'
+  
   
   // render loop
   while (!glfwWindowShouldClose(window))
@@ -121,6 +130,7 @@ int main() {
     
     // draw our first triangle
     glUseProgram(shaderProgram);
+    glBindVertexArray(VAO);
     
     // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
     glfwSwapBuffers(window);
