@@ -140,10 +140,6 @@ int main() {
 
   // uncomment this call to draw in wireframe polygons.
   // glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-
-  
-  // ----------------------------------------------
-  // stopped at chapter 'The triangle we've all been waiting for'
   
   
   // render loop
