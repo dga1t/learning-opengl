@@ -3,26 +3,32 @@
     "arguments": [
       "/usr/lib64/ccache/g++",
       "-c",
+      "-Wall",
+      "-std=c++17",
       "-Iinclude",
+      "-Ilib",
       "-o",
-      "opengl_app",
-      "src/main.cpp"
+      "bin/chapter01",
+      "src/common/glad.c"
     ],
     "directory": "/home/dp/projects/graphics/learning-opengl",
-    "file": "/home/dp/projects/graphics/learning-opengl/src/main.cpp",
-    "output": "/home/dp/projects/graphics/learning-opengl/opengl_app"
+    "file": "/home/dp/projects/graphics/learning-opengl/src/common/glad.c",
+    "output": "/home/dp/projects/graphics/learning-opengl/bin/chapter01"
   },
   {
     "arguments": [
       "/usr/lib64/ccache/g++",
       "-c",
+      "-Wall",
+      "-std=c++17",
       "-Iinclude",
+      "-Ilib",
       "-o",
-      "opengl_app",
-      "src/glad.c"
+      "bin/chapter01",
+      "src/chapter01/main.cpp"
     ],
     "directory": "/home/dp/projects/graphics/learning-opengl",
-    "file": "/home/dp/projects/graphics/learning-opengl/src/glad.c",
-    "output": "/home/dp/projects/graphics/learning-opengl/opengl_app"
+    "file": "/home/dp/projects/graphics/learning-opengl/src/chapter01/main.cpp",
+    "output": "/home/dp/projects/graphics/learning-opengl/bin/chapter01"
   }
 ]

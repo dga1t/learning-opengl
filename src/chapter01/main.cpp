@@ -3,7 +3,8 @@
 
 #include <iostream>
 
-// compile: g++ src/main.cpp src/glad.c -o opengl_app -Iinclude -lglfw -lGL
+// old compile command before moving to Makefile:
+// g++ src/main.cpp src/glad.c -o opengl_app -Iinclude -lglfw -lGL
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow *window);
