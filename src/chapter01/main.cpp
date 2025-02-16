@@ -99,6 +99,14 @@ int main() {
     0.5f, -0.5f, 0.0f,
     0.0f,  0.5f, 0.0f
   };
+  float verticesTwoTriangles[] = {
+    -1.0f, -0.5f, 0.0f,
+    0.0f, -0.5f, 0.0f,
+    -0.5f,  0.5f, 0.0f,
+    0.0f, -0.5f, 0.0f,
+    1.0f, -0.5f, 0.0f,
+    0.5f,  0.5f, 0.0f
+  };
   float verticesRectangle[] = {
     0.5f,  0.5f, 0.0f,  // top right
     0.5f, -0.5f, 0.0f,  // bottom right
@@ -119,7 +127,7 @@ int main() {
   glBindVertexArray(VAO);
   
   glBindBuffer(GL_ARRAY_BUFFER, VBO);
-  glBufferData(GL_ARRAY_BUFFER, sizeof(verticesRectangle), verticesRectangle, GL_STATIC_DRAW);
+  glBufferData(GL_ARRAY_BUFFER, sizeof(verticesTwoTriangles), verticesTwoTriangles, GL_STATIC_DRAW);
   
   glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
   glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indicesRectangle), indicesRectangle, GL_STATIC_DRAW);
@@ -138,10 +146,8 @@ int main() {
   // VAOs requires a call to glBindVertexArray anyways so we generally don't unbind VAOs (nor VBOs) when it's not directly necessary.
   glBindVertexArray(0); 
 
-
   // uncomment this call to draw in wireframe polygons.
-  // glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-  
+  // glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);  
   
   // render loop
   while (!glfwWindowShouldClose(window))
@@ -156,8 +162,9 @@ int main() {
     // draw our first triangle
     glUseProgram(shaderProgram);
     glBindVertexArray(VAO); // seeing as we only have a single VAO there's no need to bind it every time, but we'll do so to keep things a bit more organized
-    // glDrawArrays(GL_TRIANGLES, 0, 3);                  // draw triangle
-    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);  // draw rectangle
+    // glDrawArrays(GL_TRIANGLES, 0, 3);                      // draw triangle
+    glDrawArrays(GL_TRIANGLES, 0, 6);                      // draw two triangles
+    // glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);   // draw rectangle
     // glBindVertexArray(0); // no need to unbind it every time 
     
     // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
