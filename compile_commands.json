@@ -2,61 +2,33 @@
   {
     "arguments": [
       "/usr/lib64/ccache/g++",
+      "-c",
       "-Wall",
       "-std=c++17",
-      "-I/home/dp/projects/graphics/learning-opengl/include",
-      "-c",
+      "-Iinclude",
+      "-Ilib",
       "-o",
-      "src/common/shader.cpp.o",
-      "src/common/shader.cpp"
+      "bin/chapter01",
+      "src/common/glad.c"
     ],
     "directory": "/home/dp/projects/graphics/learning-opengl",
-    "file": "/home/dp/projects/graphics/learning-opengl/src/common/shader.cpp",
-    "output": "/home/dp/projects/graphics/learning-opengl/src/common/shader.cpp.o"
+    "file": "/home/dp/projects/graphics/learning-opengl/src/common/glad.c",
+    "output": "/home/dp/projects/graphics/learning-opengl/bin/chapter01"
   },
   {
     "arguments": [
       "/usr/lib64/ccache/g++",
+      "-c",
       "-Wall",
       "-std=c++17",
-      "-I/home/dp/projects/graphics/learning-opengl/include",
-      "-c",
+      "-Iinclude",
+      "-Ilib",
       "-o",
-      "src/common/utils.cpp.o",
-      "src/common/utils.cpp"
-    ],
-    "directory": "/home/dp/projects/graphics/learning-opengl",
-    "file": "/home/dp/projects/graphics/learning-opengl/src/common/utils.cpp",
-    "output": "/home/dp/projects/graphics/learning-opengl/src/common/utils.cpp.o"
-  },
-  {
-    "arguments": [
-      "/usr/lib64/ccache/g++",
-      "-Wall",
-      "-std=c++17",
-      "-I/home/dp/projects/graphics/learning-opengl/include",
-      "-c",
-      "-o",
-      "src/chapter01/main.cpp.o",
+      "bin/chapter01",
       "src/chapter01/main.cpp"
     ],
     "directory": "/home/dp/projects/graphics/learning-opengl",
     "file": "/home/dp/projects/graphics/learning-opengl/src/chapter01/main.cpp",
-    "output": "/home/dp/projects/graphics/learning-opengl/src/chapter01/main.cpp.o"
-  },
-  {
-    "arguments": [
-      "/usr/lib64/ccache/g++",
-      "-Wall",
-      "-std=c++17",
-      "-I/home/dp/projects/graphics/learning-opengl/include",
-      "-c",
-      "-o",
-      "src/chapter01/exercise1.cpp.o",
-      "src/chapter01/exercise1.cpp"
-    ],
-    "directory": "/home/dp/projects/graphics/learning-opengl",
-    "file": "/home/dp/projects/graphics/learning-opengl/src/chapter01/exercise1.cpp",
-    "output": "/home/dp/projects/graphics/learning-opengl/src/chapter01/exercise1.cpp.o"
+    "output": "/home/dp/projects/graphics/learning-opengl/bin/chapter01"
   }
 ]
