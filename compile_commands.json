@@ -30,5 +30,133 @@
     "directory": "/home/dp/projects/graphics/learning-opengl",
     "file": "/home/dp/projects/graphics/learning-opengl/src/chapter01/main.cpp",
     "output": "/home/dp/projects/graphics/learning-opengl/bin/chapter01"
+  },
+  {
+    "arguments": [
+      "/usr/lib64/ccache/g++",
+      "-c",
+      "-Wall",
+      "-std=c++17",
+      "-Iinclude",
+      "-Ilib",
+      "-o",
+      "bin/chapter01ex1",
+      "src/common/glad.c"
+    ],
+    "directory": "/home/dp/projects/graphics/learning-opengl",
+    "file": "/home/dp/projects/graphics/learning-opengl/src/common/glad.c",
+    "output": "/home/dp/projects/graphics/learning-opengl/bin/chapter01ex1"
+  },
+  {
+    "arguments": [
+      "/usr/lib64/ccache/g++",
+      "-c",
+      "-Wall",
+      "-std=c++17",
+      "-Iinclude",
+      "-Ilib",
+      "-o",
+      "bin/chapter01ex1",
+      "src/chapter01/exercise1.cpp"
+    ],
+    "directory": "/home/dp/projects/graphics/learning-opengl",
+    "file": "/home/dp/projects/graphics/learning-opengl/src/chapter01/exercise1.cpp",
+    "output": "/home/dp/projects/graphics/learning-opengl/bin/chapter01ex1"
+  },
+  {
+    "arguments": [
+      "/usr/lib64/ccache/g++",
+      "-c",
+      "-Wall",
+      "-std=c++17",
+      "-Iinclude",
+      "-Ilib",
+      "-o",
+      "bin/chapter01ex2",
+      "src/common/glad.c"
+    ],
+    "directory": "/home/dp/projects/graphics/learning-opengl",
+    "file": "/home/dp/projects/graphics/learning-opengl/src/common/glad.c",
+    "output": "/home/dp/projects/graphics/learning-opengl/bin/chapter01ex2"
+  },
+  {
+    "arguments": [
+      "/usr/lib64/ccache/g++",
+      "-c",
+      "-Wall",
+      "-std=c++17",
+      "-Iinclude",
+      "-Ilib",
+      "-o",
+      "bin/chapter01ex2",
+      "src/chapter01/exercise2.cpp"
+    ],
+    "directory": "/home/dp/projects/graphics/learning-opengl",
+    "file": "/home/dp/projects/graphics/learning-opengl/src/chapter01/exercise2.cpp",
+    "output": "/home/dp/projects/graphics/learning-opengl/bin/chapter01ex2"
+  },
+  {
+    "arguments": [
+      "/usr/lib64/ccache/g++",
+      "-c",
+      "-Wall",
+      "-std=c++17",
+      "-Iinclude",
+      "-Ilib",
+      "-o",
+      "bin/chapter01ex3",
+      "src/common/glad.c"
+    ],
+    "directory": "/home/dp/projects/graphics/learning-opengl",
+    "file": "/home/dp/projects/graphics/learning-opengl/src/common/glad.c",
+    "output": "/home/dp/projects/graphics/learning-opengl/bin/chapter01ex3"
+  },
+  {
+    "arguments": [
+      "/usr/lib64/ccache/g++",
+      "-c",
+      "-Wall",
+      "-std=c++17",
+      "-Iinclude",
+      "-Ilib",
+      "-o",
+      "bin/chapter01ex3",
+      "src/chapter01/exercise3.cpp"
+    ],
+    "directory": "/home/dp/projects/graphics/learning-opengl",
+    "file": "/home/dp/projects/graphics/learning-opengl/src/chapter01/exercise3.cpp",
+    "output": "/home/dp/projects/graphics/learning-opengl/bin/chapter01ex3"
+  },
+  {
+    "arguments": [
+      "/usr/lib64/ccache/g++",
+      "-c",
+      "-Wall",
+      "-std=c++17",
+      "-Iinclude",
+      "-Ilib",
+      "-o",
+      "bin/chapter02",
+      "src/common/glad.c"
+    ],
+    "directory": "/home/dp/projects/graphics/learning-opengl",
+    "file": "/home/dp/projects/graphics/learning-opengl/src/common/glad.c",
+    "output": "/home/dp/projects/graphics/learning-opengl/bin/chapter02"
+  },
+  {
+    "arguments": [
+      "/usr/lib64/ccache/g++",
+      "-c",
+      "-Wall",
+      "-std=c++17",
+      "-Iinclude",
+      "-Ilib",
+      "-o",
+      "bin/chapter02",
+      "src/chapter02/main.cpp"
+    ],
+    "directory": "/home/dp/projects/graphics/learning-opengl",
+    "file": "/home/dp/projects/graphics/learning-opengl/src/chapter02/main.cpp",
+    "output": "/home/dp/projects/graphics/learning-opengl/bin/chapter02"
   }
 ]
