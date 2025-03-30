@@ -3,7 +3,7 @@ CFLAGS = -Wall -std=c++17 -Iinclude -Ilib
 LDFLAGS = -lglfw -lGL -ldl
 
 # add these to COMMON_SRC later on - src/common/shader.cpp
-COMMON_SRC = src/common/glad.c src/common/utils.cpp
+COMMON_SRC = src/common/glad.c src/common/utils.cpp src/common/shader.cpp
 CHAPTER01_SRC = $(COMMON_SRC) src/chapter01/main.cpp
 CHAPTER01_EX1_SRC = $(COMMON_SRC) src/chapter01/exercise1.cpp
 CHAPTER01_EX2_SRC = $(COMMON_SRC) src/chapter01/exercise2.cpp
